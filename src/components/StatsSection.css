@@ -65,11 +65,25 @@
 @media (max-width: 1024px) {
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 }
 
 @media (max-width: 576px) {
     .stats-grid {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem;
+    }
+
+    .stat-value {
+        font-size: 3.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
     }
 }

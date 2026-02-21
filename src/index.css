@@ -107,8 +107,28 @@ section {
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  section {
+    padding: 6rem 0;
+  }
+}
+
 @media (max-width: 768px) {
   section {
     padding: 5rem 0;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
   }
 }

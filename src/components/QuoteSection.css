@@ -78,3 +78,51 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+
+@media (max-width: 768px) {
+    .quote-section {
+        padding: 7rem 0;
+    }
+
+    .quote-content {
+        padding: 0 1rem;
+    }
+
+    .quote-text {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+
+    .quote-icon {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 1.5rem;
+    }
+
+    .author-name {
+        font-size: 1.125rem;
+    }
+
+    .author-title {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-section {
+        padding: 5rem 0;
+    }
+
+    .quote-text {
+        font-size: 1.25rem;
+    }
+
+    .quote-author {
+        gap: 0.25rem;
+    }
+
+    .author-name {
+        font-size: 1rem;
+    }
+}

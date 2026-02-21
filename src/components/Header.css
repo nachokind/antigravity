@@ -77,3 +77,37 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+    .brand-header {
+        padding: 1rem 0;
+    }
+
+    .header-container {
+        padding: 0 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .logo span {
+        font-size: 0.875rem;
+    }
+
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
+    }
+
+    .theme-toggle svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+}
