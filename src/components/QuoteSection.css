@@ -41,7 +41,7 @@
 }
 
 .quote-icon {
-    color: var(--color-accent-blue);
+    color: var(--color-accent-red);
     margin-bottom: 2rem;
     opacity: 0.5;
 }
@@ -67,7 +67,7 @@
 .author-name {
     font-family: var(--font-display);
     font-size: 1.25rem;
-    color: var(--color-accent-blue);
+    color: var(--color-accent-red);
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }

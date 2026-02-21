@@ -6,19 +6,13 @@ import './HeroSection.css';
 const HeroSection = () => {
     return (
         <section className="hero-section">
-            {/* Background Video Element (Placeholder) */}
+            {/* Background Image Element */}
             <div className="video-container">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/77/2021_British_Grand_Prix_%2851349271106%29.jpg"
+                    alt="Charles Leclerc evening race"
                     className="bg-video"
-                    poster="https://upload.wikimedia.org/wikipedia/commons/5/56/Lewis_Hamilton_2022_Emilia_Romagna_Grand_Prix.jpg"
-                >
-                    {/* Using a reliable sample video to demonstrate the background video element feature */}
-                    <source src="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4" type="video/mp4" />
-                </video>
+                />
                 <div className="video-overlay"></div>
             </div>
 
@@ -28,7 +22,7 @@ const HeroSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
                 >
-                    <span className="hero-subtitle">7 X WORLD CHAMPION</span>
+                    <span className="hero-subtitle">16 X CONSTRUCTORS' CHAMPION</span>
                 </motion.div>
 
                 <motion.h1
@@ -37,9 +31,9 @@ const HeroSection = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
                 >
-                    LEWIS
+                    SCUDERIA
                     <br />
-                    <span className="text-gradient">HAMILTON</span>
+                    <span className="text-gradient">FERRARI</span>
                 </motion.h1>
 
                 <motion.p
@@ -48,7 +42,7 @@ const HeroSection = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 1 }}
                 >
-                    "Still I Rise"
+                    "Essere Ferrari"
                 </motion.p>
             </div>
 
@@ -63,7 +57,7 @@ const HeroSection = () => {
                     animate={{ y: [0, 10, 0] }}
                     transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                 >
-                    <ChevronDown size={32} color="var(--color-accent-blue)" />
+                    <ChevronDown size={32} color="var(--color-accent-red)" />
                 </motion.div>
             </motion.div>
         </section>

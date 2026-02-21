@@ -8,7 +8,7 @@ const QuoteSection = () => {
         <section className="quote-section">
             <div className="quote-background">
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/de/FIA_F1_Austria_2018_Handshake_after_Qualifying.jpg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/75/Enzo_Ferrari_Monza_1967.jpg"
                     alt="Abstract Background"
                     className="bg-img"
                 />
@@ -25,11 +25,11 @@ const QuoteSection = () => {
                 >
                     <Quote size={48} className="quote-icon" />
                     <h2 className="quote-text">
-                        "In racing there are always things you can learn, every single day. There is always space for improvement, and I think that applies to everything in life."
+                        "Ask a child to draw a car, and certainly he will draw it red."
                     </h2>
                     <div className="quote-author">
-                        <span className="author-name">Lewis Hamilton</span>
-                        <span className="author-title">7x Formula 1 World Champion</span>
+                        <span className="author-name">Enzo Ferrari</span>
+                        <span className="author-title">Il Commendatore</span>
                     </div>
                 </motion.div>
             </div>

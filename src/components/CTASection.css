@@ -24,7 +24,7 @@
 .cta-title {
     font-size: clamp(2rem, 4vw, 3.5rem);
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #FFFFFF, var(--color-accent-blue));
+    background: linear-gradient(135deg, #FFFFFF, var(--color-accent-red));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -60,15 +60,16 @@
 }
 
 .btn-primary {
-    background: var(--color-accent-blue);
-    color: #000;
-    box-shadow: 0 10px 20px rgba(0, 210, 190, 0.2);
+    background: var(--color-accent-red);
+    color: #FFF;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(0, 210, 190, 0.4);
-    background: #00F0D8;
+    box-shadow: 0 15px 30px rgba(255, 40, 0, 0.4);
+    background: #D40000;
 }
 
 .btn-primary .btn-icon {

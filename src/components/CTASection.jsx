@@ -15,18 +15,18 @@ const CTASection = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <div className="cta-content">
-                        <h2 className="cta-title">Join The Journey</h2>
+                        <h2 className="cta-title">Join The Tifosi</h2>
                         <p className="cta-description">
-                            Follow Lewis Hamilton's pursuit of greatness on and off the track. Stay updated with the latest news, race results, and exclusive content.
+                            Follow Scuderia Ferrari's pursuit of greatness on and off the track. Stay updated with the latest news, race results, and exclusive content.
                         </p>
                         <div className="cta-actions">
-                            <button className="btn btn-primary">
+                            <a href="https://www.instagram.com/scuderiaferrari/" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ textDecoration: 'none' }}>
                                 <span>Follow on Instagram</span>
                                 <ArrowRight size={20} className="btn-icon" />
-                            </button>
-                            <button className="btn btn-secondary">
+                            </a>
+                            <a href="https://store.ferrari.com/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ textDecoration: 'none' }}>
                                 <span>Official Store</span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <motion.div
@@ -38,8 +38,8 @@ const CTASection = () => {
                     >
                         <div className="glow-effect"></div>
                         <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/a/a9/2021_United_States_Grand_Prix_23_%28cropped%29.jpg"
-                            alt="Hamilton driving"
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/98/Ferrari_F1-75_in_Melbourne.jpg"
+                            alt="Ferrari Team Car"
                             className="cta-image"
                         />
                     </motion.div>

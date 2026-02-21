@@ -20,7 +20,7 @@ const Header = () => {
         <header className="brand-header">
             <div className="header-container">
                 <div className="logo">
-                    LH<span>44</span>
+                    SCUDERIA<span>FERRARI</span>
                 </div>
                 <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
                     <motion.div

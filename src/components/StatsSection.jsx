@@ -3,10 +3,10 @@ import { motion, useInView, useAnimation } from 'framer-motion';
 import './StatsSection.css';
 
 const statsData = [
-    { id: 1, label: "World Championships", value: 7, suffix: "" },
-    { id: 2, label: "Race Wins", value: 103, suffix: "+" },
-    { id: 3, label: "Pole Positions", value: 104, suffix: "+" },
-    { id: 4, label: "Podium Finishes", value: 197, suffix: "+" }
+    { id: 1, label: "Constructors'", value: 16, suffix: "" },
+    { id: 2, label: "Drivers'", value: 15, suffix: "" },
+    { id: 3, label: "Race Wins", value: 243, suffix: "+" },
+    { id: 4, label: "Podium Finishes", value: 800, suffix: "+" }
 ];
 
 const Counter = ({ value, suffix }) => {

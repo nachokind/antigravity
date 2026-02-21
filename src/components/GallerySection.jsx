@@ -1,27 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './GallerySection.css';
 
 const images = [
     {
         id: 1,
-        url: "https://upload.wikimedia.org/wikipedia/commons/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg",
-        alt: "F1 Car on track"
+        driverId: "leclerc",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3978_by_Stepro_%28cropped2%29.jpg/1280px-2024-08-25_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3978_by_Stepro_%28cropped2%29.jpg",
+        alt: "Charles Leclerc",
+        title: "Charles Leclerc",
+        number: "16"
     },
     {
         id: 2,
-        url: "https://upload.wikimedia.org/wikipedia/commons/8/8c/FIA_F1_Imola_2025_No._44_Hamilton.jpg",
-        alt: "Driver focus"
+        driverId: "hamilton",
+        url: "https://upload.wikimedia.org/wikipedia/commons/1/18/Lewis_Hamilton_2016_Malaysia_2.jpg",
+        alt: "Lewis Hamilton",
+        title: "Lewis Hamilton",
+        number: "44"
     },
     {
         id: 3,
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/ab/F1_2014_JAP_Lewis_Hamilton_4968.jpg",
-        alt: "Racing Helmet"
-    },
-    {
-        id: 4,
-        url: "https://upload.wikimedia.org/wikipedia/commons/9/90/2018_Italian_Grand_Prix_Hamilton_%2844313902384%29.jpg",
-        alt: "Celebration"
+        driverId: "car",
+        url: "https://upload.wikimedia.org/wikipedia/commons/9/98/Ferrari_F1-75_in_Melbourne.jpg",
+        alt: "Ferrari F1 Car",
+        title: "Scuderia Ferrari",
+        number: "SF-24"
     }
 ];
 
@@ -36,8 +41,8 @@ const GallerySection = () => {
                     transition={{ duration: 0.8 }}
                     className="section-header"
                 >
-                    <span className="section-subtitle">The Legacy</span>
-                    <h2 className="section-title">Driven by <span className="text-gradient-gold">Excellence</span></h2>
+                    <span className="section-subtitle">2026 Lineup</span>
+                    <h2 className="section-title">The <span className="text-gradient">Drivers</span></h2>
                 </motion.div>
 
                 <div className="gallery-grid">
@@ -50,10 +55,26 @@ const GallerySection = () => {
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.6, delay: index * 0.2 }}
                         >
-                            <div className="image-wrapper">
-                                <img src={img.url} alt={img.alt} />
-                                <div className="image-overlay"></div>
-                            </div>
+                            {img.driverId !== "car" ? (
+                                <Link to={`/driver/${img.driverId}`} className="image-wrapper">
+                                    <img src={img.url} alt={img.alt} />
+                                    <div className="image-overlay">
+                                        <div className="driver-info-hover">
+                                            <h3>{img.title}</h3>
+                                            <span>#{img.number}</span>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ) : (
+                                <div className="image-wrapper">
+                                    <img src={img.url} alt={img.alt} />
+                                    <div className="image-overlay">
+                                        <div className="driver-info-hover">
+                                            <h3>{img.title}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
                         </motion.div>
                     ))}
                 </div>

@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@800;900&display=swap');
 
 :root {
-  /* Color Palette - Premium Dark Theme with Racing Accents */
-  --color-bg: #0A0A0E;
-  --color-bg-secondary: #12121A;
-  --color-text: #EAEAEA;
-  --color-text-muted: #A0A0A0;
-  --color-accent-blue: #00D2BE;
-  /* Mercedes Neon Teal */
-  --color-accent-red: #E00613;
-  /* Racing Vibrant Red */
-  --color-accent-purple: #814FE3;
-  /* LH44 Purple */
-  --color-gold: #D4AF37;
-  /* Champion Gold */
+  /* Color Palette - Premium Dark Theme with Racing Accents (Ferrari) */
+  --color-bg: #4A0000;
+  /* Pronounced Dark Red Background */
+  --color-bg-secondary: #2D0000;
+  /* Richer Dark Red */
+  --color-text: #FFFFFF;
+  --color-text-muted: #EAEAEA;
+  --color-accent-primary: #FFF200;
+  /* Modena Yellow */
+  --color-accent-secondary: #FFFFFF;
+  /* White */
+  --color-accent-red: #FF2800;
+  /* Brighter Red for buttons */
+  --color-accent-purple: #111111;
+  /* Deep carbon black */
+  --color-gold: #FFF200;
 
   /* Typography */
   --font-primary: 'Inter', sans-serif;
@@ -33,8 +36,9 @@
   --color-text: #111111;
   /* Deep black */
   --color-text-muted: #4A4A4A;
-  --color-accent-blue: #00A696;
-  /* Slightly darker teal for contrast on light bg */
+  --color-accent-primary: #D40000;
+  /* Regular Ferrari Red */
+  --color-accent-secondary: #111111;
 }
 
 * {
@@ -86,7 +90,7 @@ a {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
+  background: linear-gradient(135deg, var(--color-accent-red), var(--color-accent-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
