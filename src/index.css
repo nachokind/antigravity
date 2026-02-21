@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@800;900&display=swap');
+
+:root {
+  /* Color Palette - Premium Dark Theme with Racing Accents */
+  --color-bg: #0A0A0E;
+  --color-bg-secondary: #12121A;
+  --color-text: #EAEAEA;
+  --color-text-muted: #A0A0A0;
+  --color-accent-blue: #00D2BE;
+  /* Mercedes Neon Teal */
+  --color-accent-red: #E00613;
+  /* Racing Vibrant Red */
+  --color-accent-purple: #814FE3;
+  /* LH44 Purple */
+  --color-gold: #D4AF37;
+  /* Champion Gold */
+
+  /* Typography */
+  --font-primary: 'Inter', sans-serif;
+  --font-display: 'Syncopate', sans-serif;
+  --font-heavy: 'Outfit', sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.light-theme {
+  --color-bg: #F8F6F0;
+  /* Cream background */
+  --color-bg-secondary: #EBE8DE;
+  --color-text: #111111;
+  /* Deep black */
+  --color-text-muted: #4A4A4A;
+  --color-accent-blue: #00A696;
+  /* Slightly darker teal for contrast on light bg */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+* {
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+/* Base Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #F9D423, #FF4E50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Section Spacing */
+section {
+  padding: 8rem 0;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 5rem 0;
+  }
+}

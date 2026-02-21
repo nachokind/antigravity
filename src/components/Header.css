@@ -1,0 +1,79 @@
+.brand-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 100;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+    transition: background var(--transition-normal);
+}
+
+/* On light theme, background gradient is lighter */
+.light-theme .brand-header {
+    background: linear-gradient(to bottom, rgba(248, 246, 240, 0.9), transparent);
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: baseline;
+}
+
+.logo span {
+    color: var(--color-accent-blue);
+    font-family: var(--font-heavy);
+    font-size: 1rem;
+    margin-left: 0.2rem;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-text);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    backdrop-filter: blur(5px);
+}
+
+.light-theme .theme-toggle {
+    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.theme-toggle:hover {
+    background: var(--color-accent-blue);
+    border-color: var(--color-accent-blue);
+    color: #000;
+    transform: scale(1.1);
+}
+
+.light-theme .theme-toggle:hover {
+    color: #fff;
+}
+
+.toggle-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
